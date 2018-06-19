@@ -13,7 +13,7 @@ if (typeof module !== 'undefined' && module.exports) {
 
 var fox = 'The quick brown fox jumps over the lazy dog';
 var empty = '';
-var axe = 'AXE';
+var dash = 'DASH';
 var longDream = 'Take this kiss upon the brow! And, in parting from you now, Thus much let me avow-- You are not wrong, who deem That my days have been a dream; Yet if hope has flown away In a night, or in a day, In a vision, or in none, Is it therefore the less gone? All that we see or seem Is but a dream within a dream. I stand amid the roar Of a surf-tormented shore, And I hold within my hand Grains of the golden sand-- How few! yet how they creep Through my fingers to the deep, While I weep--while I weep! O God! can I not grasp Them with a tighter clasp? O God! can I not save One from the pitiless wave? Is all that we see or seem But a dream within a dream?';
 var int32 = [-1245000620, -1578223460, 654805539, -1068884769, -968029107, -8582190, 491541657, 290156804, 1046922525, 1254877013, -1307320917, 1691597203, 55068107, 1715389297, 252729336, 127805489];
 var buffer = new buffer('0400000097ea9c8bee806143a8ae50116fe3d329dcbb18b5d8ea71a7a213a1b052000000b1950f668df2593684169b0e33ee7fb1b8e00d90ed906d80b4c2baa7d1b65f548f495a57ed98521d348b0700','hex')
@@ -30,8 +30,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.digest(fox)).to.equal('534536a4e4f16b32447f02f77200449dc2f23b532e3d9878fe111c9de666bc5c');
         });
 
-        it('axe string', function () {
-            expect(x11.digest(axe)).to.equal('fe809ebca8753d907f6ad32cdcf8e5c4e090d7bece5df35b2147e10b88c12d26');
+        it('dash string', function () {
+            expect(x11.digest(dash)).to.equal('fe809ebca8753d907f6ad32cdcf8e5c4e090d7bece5df35b2147e10b88c12d26');
         });
 
         it('dream string', function () {
@@ -219,8 +219,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.blake(fox)).to.equal('1f7e26f63b6ad25a0896fd978fd050a1766391d2fd0471a77afb975e5034b7ad2d9ccf8dfb47abbbe656e1b82fbc634ba42ce186e8dc5e1ce09a885d41f43451');
         });
 
-        it('axe string', function () {
-            expect(x11.blake(axe)).to.equal('d187e862889f3d3eb106e825b3ea4385f88a750cb6614d18219f9809ccd25874d46e856e741e334daf160270031280f61cca5c807ced7f4a7bf8beba1fd9a053');
+        it('dash string', function () {
+            expect(x11.blake(dash)).to.equal('d187e862889f3d3eb106e825b3ea4385f88a750cb6614d18219f9809ccd25874d46e856e741e334daf160270031280f61cca5c807ced7f4a7bf8beba1fd9a053');
         });
 
         it('dream string', function () {
@@ -242,8 +242,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.bmw(fox)).to.equal('2998d4cb31323e1169b458ab03a54d0b68e411a3c7cc7612adbf05bf901b8197dfd852c1c0099c09717d2fad3537207e737c6159c31d377d1ab8f5ed1ceeea06');
         });
 
-        it('axe string', function () {
-            expect(x11.bmw(axe)).to.equal('4146f08952d34cb498486dc0a063939d7f7be69ede232f379f93c08091ea6d13d6ebdb4e06fe24030f7ca9ac07b8f59e5cfadbb05bded3b9bb3a9abecea031cb');
+        it('dash string', function () {
+            expect(x11.bmw(dash)).to.equal('4146f08952d34cb498486dc0a063939d7f7be69ede232f379f93c08091ea6d13d6ebdb4e06fe24030f7ca9ac07b8f59e5cfadbb05bded3b9bb3a9abecea031cb');
         });
 
         it('dream string', function () {
@@ -265,8 +265,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.cubehash(fox)).to.equal('bdba44a28cd16b774bdf3c9511def1a2baf39d4ef98b92c27cf5e37beb8990b7cdb6575dae1a548330780810618b8a5c351c1368904db7ebdf8857d596083a86');
         });
 
-        it('axe string', function () {
-            expect(x11.cubehash(axe)).to.equal('3258d531a2c1fd2006d67d739b7a15a249d9c8cdbeabe51561a38d02ebdd0f15f41b9515001d3993d8f462925b015d53494c5b4dc6e046647c6e8b6b620b4d15');
+        it('dash string', function () {
+            expect(x11.cubehash(dash)).to.equal('3258d531a2c1fd2006d67d739b7a15a249d9c8cdbeabe51561a38d02ebdd0f15f41b9515001d3993d8f462925b015d53494c5b4dc6e046647c6e8b6b620b4d15');
         });
 
         it('dream string', function () {
@@ -288,8 +288,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.echo(fox)).to.equal('fe61eba97bdfcaa027ded44a5f883fcb900b97449596d7b4a7187c76e71ad750e6117b529bd69992bec015bef862d16d62c384b600cb300d486e565f94202abf');
         });
 
-        it('axe string', function () {
-            expect(x11.echo(axe)).to.equal('42a2ee2bb582f59d1be01e4a24ed31041aa1898a3c6c2efe6956e5c6b9eb33d4a9f390f6eccdb7c757d4cb6ad3d3aed302d97740fdf78f569f599ab8cd71ff49');
+        it('dash string', function () {
+            expect(x11.echo(dash)).to.equal('42a2ee2bb582f59d1be01e4a24ed31041aa1898a3c6c2efe6956e5c6b9eb33d4a9f390f6eccdb7c757d4cb6ad3d3aed302d97740fdf78f569f599ab8cd71ff49');
         });
 
         it('dream string', function () {
@@ -311,8 +311,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.groestl(fox)).to.equal('badc1f70ccd69e0cf3760c3f93884289da84ec13c70b3d12a53a7a8a4a513f99715d46288f55e1dbf926e6d084a0538e4eebfc91cf2b21452921ccde9131718d');
         });
 
-        it('axe string', function () {
-            expect(x11.groestl(axe)).to.equal('f4c9ce627e2ed9d79c6942e5ff22939048afa1e59ce2f1adeec3f22ea6e7d7f39b8b15c543a4eae74bf9df7a2e9a987dbb4d17537cbb26e994499cd5c22907df');
+        it('dash string', function () {
+            expect(x11.groestl(dash)).to.equal('f4c9ce627e2ed9d79c6942e5ff22939048afa1e59ce2f1adeec3f22ea6e7d7f39b8b15c543a4eae74bf9df7a2e9a987dbb4d17537cbb26e994499cd5c22907df');
         });
 
         it('dream string', function () {
@@ -334,8 +334,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.jh(fox)).to.equal('043f14e7c0775e7b1ef5ad657b1e858250b21e2e61fd699783f8634cb86f3ff938451cabd0c8cdae91d4f659d3f9f6f654f1bfedca117ffba735c15fedda47a3');
         });
 
-        it('axe string', function () {
-            expect(x11.jh(axe)).to.equal('9999b3770256821e3a74c780ada66013df52378103addef0bceaac4be4f889d5ff93dc99d654310cc0063f15baa4ab168a2d8b6301104905619c334a92f521a1');
+        it('dash string', function () {
+            expect(x11.jh(dash)).to.equal('9999b3770256821e3a74c780ada66013df52378103addef0bceaac4be4f889d5ff93dc99d654310cc0063f15baa4ab168a2d8b6301104905619c334a92f521a1');
         });
 
         it('dream string', function () {
@@ -357,8 +357,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.keccak(fox)).to.equal('d135bb84d0439dbac432247ee573a23ea7d3c9deb2a968eb31d47c4fb45f1ef4422d6c531b5b9bd6f449ebcc449ea94d0a8f05f62130fda612da53c79659f609');
         });
 
-        it('axe string', function () {
-            expect(x11.keccak(axe)).to.equal('b166196bc60ee0a6d355d3b2e9418fd7b89d49308bdec6e78e3a47e126421966aacb875bd881b4c2987ae37b3cc31774aa2e2847c967f82338ce4046cb593eb6');
+        it('dash string', function () {
+            expect(x11.keccak(dash)).to.equal('b166196bc60ee0a6d355d3b2e9418fd7b89d49308bdec6e78e3a47e126421966aacb875bd881b4c2987ae37b3cc31774aa2e2847c967f82338ce4046cb593eb6');
         });
 
         it('dream string', function () {
@@ -380,8 +380,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.luffa(fox)).to.equal('459e2280a7cdb0c721d8d9dbeb9ed339659dc9e7b158e9dd2d328d946cb21474dc9177edfc93602f1aadb31944c795c9b5df859a3dc6132d4f0a4c476aaf797f');
         });
 
-        it('axe string', function () {
-            expect(x11.luffa(axe)).to.equal('7181d2550acde547eff499c1d533293f6bf4a0464dd9f2264ff5f35e17bb3238a6f7eb036645119a7575627f65fd74288c9581f6cf8a8df034547900aa86d634');
+        it('dash string', function () {
+            expect(x11.luffa(dash)).to.equal('7181d2550acde547eff499c1d533293f6bf4a0464dd9f2264ff5f35e17bb3238a6f7eb036645119a7575627f65fd74288c9581f6cf8a8df034547900aa86d634');
         });
 
         it('dream string', function () {
@@ -403,8 +403,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.shavite(fox)).to.equal('4dbd97835c4e5cfa14799884a7adc96688dd808ff53d5c4cfe7db89a55ee98d0260791ec0c9b5466482ab3f6f236da7e65e1cb6d1ee624f61a5b2b79f63c4120');
         });
 
-        it('axe string', function () {
-            expect(x11.shavite(axe)).to.equal('45f24351ef4f5b7477214efe97f8cef4d69007e94e1e5f397011c4fecd4517fe69c509ea6aa758a9055dd6d0864b885498f4fdab5cc0458dbf98e7069b2c52dd');
+        it('dash string', function () {
+            expect(x11.shavite(dash)).to.equal('45f24351ef4f5b7477214efe97f8cef4d69007e94e1e5f397011c4fecd4517fe69c509ea6aa758a9055dd6d0864b885498f4fdab5cc0458dbf98e7069b2c52dd');
         });
 
         it('dream string', function () {
@@ -426,8 +426,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.simd(fox)).to.equal('ca493ce78cc2a63b5a48393e61d113d59a930b3e76d062ab58177345c48b59890a08661d04dd6160a1b42d215f1e303d97ab0abb54e65f758f79aee2b182b34b');
         });
 
-        it('axe string', function () {
-            expect(x11.simd(axe)).to.equal('e736a132375bd8aa02d00ea3ff3f0ef4cb8fbdd0b3cf3d619cf3e270896d2911105dc9bf46c395db98f17601529d24b8fa89a28e75f73da110d91a19c44f8975');
+        it('dash string', function () {
+            expect(x11.simd(dash)).to.equal('e736a132375bd8aa02d00ea3ff3f0ef4cb8fbdd0b3cf3d619cf3e270896d2911105dc9bf46c395db98f17601529d24b8fa89a28e75f73da110d91a19c44f8975');
         });
 
         it('dream string', function () {
@@ -449,8 +449,8 @@ describe('X11 Hash Functions', function () {
             expect(x11.skein(fox)).to.equal('94c2ae036dba8783d0b3f7d6cc111ff810702f5c77707999be7e1c9486ff238a7044de734293147359b4ac7e1d09cd247c351d69826b78dcddd951f0ef912713');
         });
 
-        it('axe string', function () {
-            expect(x11.skein(axe)).to.equal('1db131ba5bc4b3ec9e381a752b3f0d53e8dd25e3d22aa8b9f17b570c3b5938833b91a54939ba873d28483e8b936f9584f06e80b1232a716a074377abd5c2b3f0');
+        it('dash string', function () {
+            expect(x11.skein(dash)).to.equal('1db131ba5bc4b3ec9e381a752b3f0d53e8dd25e3d22aa8b9f17b570c3b5938833b91a54939ba873d28483e8b936f9584f06e80b1232a716a074377abd5c2b3f0');
         });
 
         it('dream string', function () {
