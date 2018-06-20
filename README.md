@@ -1,5 +1,5 @@
 # x11-hash-js
-
+[![Build Status](https://travis-ci.com/AXErunners/x11-hash-js.svg?branch=master)](https://travis-ci.com/AXErunners/x11-hash-js)
 > Performs the [x11 hashing](https://docs.dash.org/en/latest/introduction/features.html#x11-hash-algorithm) algorithm used in the [AXE cryptocurrency](https://axerunners.github.io) in JavaScript.
 
 ## Usage
