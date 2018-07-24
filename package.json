@@ -1,6 +1,6 @@
 {
   "name": "@axerunners/x11-hash-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "x11 javascript hashing algorithm in pure javascript",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axerunners/x11-hash-js.git"
+    "url": "https://github.com/axerunners/x11-hash-js.git"
   },
   "keywords": [
     "x11",
@@ -57,10 +57,5 @@
     "mocha": "^2.5.3",
     "phantomjs": "^2.1.7",
     "uglify": "^0.1.5"
-  },
-  "homepage": "https://github.com/axerunners/x11-hash-js#readme",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
   }
 }
